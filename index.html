@@ -2,124 +2,143 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <title>Andrew's Portfolio</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
 </head>
 
-<body data-spy="scroll" data-target="#myScrollspy">
+<body>
     <!-- navbar where it will scrollspy on where the screen is currently positioned and hopefully it will go clear when it is on the very top -->
-    <nav class="navbar navbar-inverse navbar-expand-lg navbar-light fixed-top">
-            <div class="container-fluid">
-              <div class="navbar-header">
-                <a class="nav navbar-nav" id="justName">Andrew A. Han</a>
-              </div>
-              <ul class="nav navbar-nav collapse navbar-collapse navbar-right" id="myScrollspy">  
-                 
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                
-              </ul> 
+    <nav class="fixed-top navbar-inverse navbar-expand-lg text-uppercase">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="nav navbar-brand" id="justName" href="#page-top">Andrew A. Han</a>
             </div>
-          </nav>
+            <ul class="nav navbar-nav navbar-right" id="smoothScroll">
 
-    <div id="about" class="container-fluid">
-        <!-- 00000000000000000000000000000 ROW 00000000000000000000000000000 -->
-    <div class="row">
-            <div class="col-md-2"></div>
-        <div class="col-md-8">
-                <h1>Andrew.Han</h1>
-                <p>
-                    Hello! My name is Andrew Han, and currently, I am a student at Penn Coding BootCamp located in Philadelphia, Pennsylvannia.
-                    Previously, I ran a carwash in Downingtown, PA for eight years and sold it on March 2017. If I'm not coding,
-                    I am usually on my guitar jamming to random songs.
-                    <br> 
-                    Through Penn Coding Bootcamp, I know I will become the best Fullstack developer in the whole-wide world!
-                </p>
-                <img="#" alt="self picture">
+                <li>
+                    <a href="#about">About Me</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+
+            </ul>
         </div>
-        <div class="col-md-2"></div>     
-    </div>
-    </div>
-    <!-- 00000000000000000000000000000 ROW About me 00000000000000000000000000000 -->
-
-<!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@ ROW Portfolio @@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
-
-    <div id="portfolio" class="container">
-        <h2 class="text-center text-uppercase text-secondary">Portfolio</h2>
-        <!-- portfolio block #1 Putting HANGMAN DRAGONBALLSUPER -->
-        <div class="col-md-4">
-            <a class="d-block mx-auto" href="#">
-                <div class="position-absolute h-100 w-100">
-                    <div class="my-auto w-100 text-center text-white">
-
+    </nav>
+    <section class="" id="about">
+        <div class="container-fluid">
+            <!-- 00000000000000000000000000000 ROW 00000000000000000000000000000 -->
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 text-center">
+                    <h1 class="section-heading">Andrew.Han</h1>
+                    <hr class="light my-4">
+                    <h3 class="text-faded">
+                        Hello! My name is Andrew Han, and currently, I am a student at Penn Coding BootCamp located in Philadelphia, Pennsylvannia.
+                        Previously, I ran a carwash in Downingtown, PA for eight years and sold it on March 2017. If I'm
+                        not coding, I am usually on my guitar jamming to random songs.
+                        <br> Through Penn Coding Bootcamp, I know I will become the best Fullstack developer in the whole-wide
+                        world!
+                    </h3>
+                    <div>
+                        <img id='pImg' src="./assets/images/1919373_704464520373_5704511_n.jpg" alt="self picture">
                     </div>
                 </div>
-                <img class='img-fluid' src="assets/images/dragon.png" alt="gokuandvegetainblue" height="300">
-            </a>
+                <div class="col-md-2"></div>
+            </div>
         </div>
-        <!-- portfolio block # Putting CrystalCounter jQuery -->
-        <div class="col-md-4">
-                <a class="d-block mx-auto" href="#">
+    </section>
+    <!-- 00000000000000000000000000000 ROW About me 00000000000000000000000000000 -->
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@ ROW Portfolio @@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <section class="portfolio" id="portfolio">
+        <div id="portfolio" class="container">
+            <h2 class="text-center text-uppercase ">Portfolio</h2>
+            <!-- portfolio block #1 Putting HANGMAN DRAGONBALLSUPER -->
+            <div class="col-md-4">
+                <a class="" href="#">
                     <div class="position-absolute h-100 w-100">
-                        <div class="my-auto w-100 text-center text-white">
-    
+                        <div class="w-100 text-center text-white">
+
+                        </div>
+                    </div>
+                    <img class='img-fluid' src="assets/images/dragon.png" alt="gokuandvegetainblue" height="300">
+                </a>
+            </div>
+            <!-- portfolio block # Putting CrystalCounter jQuery -->
+            <div class="col-md-4">
+                <a class="" href="#">
+                    <div class="position-absolute h-100 w-100">
+                        <div class=" w-100 text-center text-white">
+
                         </div>
                     </div>
                     <img class='img-fluid' src="assets/images/gems.jpg" alt="gems" height="300">
                 </a>
             </div>
-             <!-- portfolio block # Putting Ajax moving/still gifs using GIPHY API -->
-             <div class="col-md-4">
-                    <a class="d-block mx-auto" href="#">
-                        <div class="position-absolute h-100 w-100">
-                            <div class="my-auto w-100 text-center text-white">
-        
-                            </div>
+            <!-- portfolio block # Putting Ajax moving/still gifs using GIPHY API -->
+            <div class="col-md-4">
+                <a class="" href="#">
+                    <div class="position-absolute h-100 w-100">
+                        <div class="w-100 text-center text-white">
+
                         </div>
-                        <img class='img-fluid' src="assets/images/giphy.gif" alt="giphylogo" height="300">
-                    </a>
-                </div>
+                    </div>
+                    <img class='img-fluid' src="assets/images/giphy.gif" alt="giphylogo" height="300">
+                </a>
+            </div>
 
-    </div>
-
+        </div>
+    </section>
     <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@ ROW Portfolio @@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
 
     <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxx ROW Contact xxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
-
-    <div id="contact" class="container">
+    <section id="contact">
+        <div class="container">
             <h3 class="text-center text-uppercase text-secondary">Feel Free To Contact Me</h3>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="form-group">
-                    <input type="text" class="form-control input-lg" placeholder="Your Name*">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg" placeholder="Your Name*">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg" placeholder="Your Email*">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg" placeholder="Your Phone*">
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="text" class="form-control input-lg" placeholder="Your Email*">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control input-lg" placeholder="Your Phone*">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <textarea class="form-control input-lg" id="message" placeholder="Your Message *" required data-validation-required-message="Please enter a message." rows="6"></textarea>
-                    <p class="help-block text-danger"></p>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <textarea class="form-control input-lg" id="message" placeholder="Your Message *" required data-validation-required-message="Please enter a message."
+                            rows="10"></textarea>
+                        <p class="help-block text-danger"></p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-     <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxx ROW Contact xxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+    </section>
+    <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxx ROW Contact xxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
+    <script src="./assets/javascript/app.js"></script>
 </body>
 
 </html>
