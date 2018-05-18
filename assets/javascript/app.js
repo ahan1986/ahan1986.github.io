@@ -5,3 +5,18 @@ $("#smoothScroll a").click(function() {
   return false;
 })
 
+//function to collapse navbar if it is not on the top
+function navBarCollapse() {
+  if($('#navbar').offset() > 100) {
+    $('#navbar').addClass('navbar-shrink');
+  } else {
+    $("#navbar").removeClass('navbar-shrink');
+  }
+};
+// calling navBarCollapse function
+navBarCollapse();
+// collapse when user is scrolling
+$(window).scroll(navBarCollapse());
+
+
+

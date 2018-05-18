@@ -41,9 +41,44 @@ section h2 {
 .parallax {
   background-image: url("../images/jeju.jpg");
   height: 100%;
-  width: auto;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; 
+}
+.parallax1 {
+  background-image: url("../images/homeOffice.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+#navBar {
+  background-color: transparent;
+  border-color: transparent;
+  color: white;
+}
+.navbar-brand {
+  color: blue;
+}
+a {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #42DCA3;
+}
+a:focus, a:hover {
+  text-decoration: none;
+  color: #1d9b6c;
+}
+.navbar-shrink {
+  
+}
+
+.d1 {
+  margin-top: 100px;
+}
+.d2 {
+  margin-top: 200px;
 }
