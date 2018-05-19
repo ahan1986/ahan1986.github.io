@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+    <script src="./rellax-master/rellax.js"></script>
+    <script src="./rellax-master/rellax.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Andrew's Portfolio</title>
@@ -16,7 +17,7 @@
         crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-        
+
 </head>
 
 <body>
@@ -46,7 +47,7 @@
         <div class="container-fluid">
             <!-- 00000000000000000000000000000 ROW 00000000000000000000000000000 -->
             <div class="row">
-                
+
                 <div class="col-md-2"></div>
                 <div class="col-md-8 text-center">
                     <h1 class="section-heading">Andrew.Han</h1>
@@ -67,53 +68,149 @@
         </div>
     </section>
     <!-- 00000000000000000000000000000 ROW About me 00000000000000000000000000000 -->
-    
     <div class="rellax d1">
-        I'm slow and smooth
+
     </div>
 
     <div class="rellax d2" data-rellax-speed='6'>
-        I should be going a little bit faster upwards
+
     </div>
     <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@ ROW Portfolio @@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
-    <section class="portfolio" id="portfolio">
-        <div id="portfolio" class="container">
-            <h2 class="text-center text-uppercase ">Portfolio</h2>
-            <!-- portfolio block #1 Putting HANGMAN DRAGONBALLSUPER -->
-            <div class="col-md-4">
-                <a class="" href="#">
-                    <div class="position-absolute h-100 w-100">
-                        <div class="w-100 text-center text-white">
-
+    <section id='portfolio'>
+            <div class="row">
+        <div class="col-lg-4 col-sm-6">
+            <div id="imgBox">
+                <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+                    <img class="img-fluid" src="./images/dbsuper.png" alt="gems">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Vanilla Javascript
+                            </div>
+                            <div class="project-name">
+                                DragonBall Hangman
+                            </div>
                         </div>
                     </div>
-                    <img class='img-fluid' src="./images/dragon.png" alt="gokuandvegetainblue" height="300">
                 </a>
             </div>
-            <!-- portfolio block # Putting CrystalCounter jQuery -->
-            <div class="col-md-4">
-                <a class="" href="#">
-                    <div class="position-absolute h-100 w-100">
-                        <div class=" w-100 text-center text-white">
-
-                        </div>
-                    </div>
-                    <img class='img-fluid' src="./images/gems.jpg" alt="gems" height="300">
-                </a>
-            </div>
-            <!-- portfolio block # Putting Ajax moving/still gifs using GIPHY API -->
-            <div class="col-md-4">
-                <a class="" href="#">
-                    <div class="position-absolute h-100 w-100">
-                        <div class="w-100 text-center text-white">
-
-                        </div>
-                    </div>
-                    <img class='img-fluid' src="./images/giphy.gif" alt="giphylogo" height="300">
-                </a>
-            </div>
-
         </div>
+
+        <!-- portfolio block # Putting CrystalCounter jQuery -->
+        <div class="col-lg-4 col-sm-6">
+                <div id="imgBox">
+                <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+                    <img class="img-fluid" src="./images/crystalcollector.png" alt="gems">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                jQuery
+                            </div>
+                            <div class="project-name">
+                                Gem Collector
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- portfolio block # Putting Ajax moving/still gifs using GIPHY API -->
+
+        <div class="col-lg-4 col-sm-6">
+                <div id="imgBox">
+                <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+                    <img class="img-fluid" src="./images/crystalcollector.png" alt="giphyLogo">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                AJAX
+                            </div>
+                            <div class="project-name">
+                                Api Giphy Creator
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div>
+    <div class="row">
+        <div class="col-lg-4 col-sm-6">
+                <div id="imgBox">
+                <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+                    <img class="img-fluid" src="./images/api.png" alt="gems">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                API AJAX
+                            </div>
+                            <div class="project-name">
+                                API Tester
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+                <div id="imgBox">
+                <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+                    <img class="img-fluid" src="./images/rockpaper.png" alt="gems">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Firebase
+                            </div>
+                            <div class="project-name">
+                                Rock-Paper-Scissors!
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-6">
+                <div id="imgBox">
+                <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+                    <img class="img-fluid" src="./images/train.png" alt="gems">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Firebase
+                            </div>
+                            <div class="project-name">
+                                Train Scheduler
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class='row'>
+        <div class="col-lg-4 col-sm-6">
+                <div id="imgBox">
+                <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+                    <img class="img-fluid" src="./images/trivia.png" alt="gems">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Javascript
+                            </div>
+                            <div class="project-name">
+                                Trivia
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
     </section>
     <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@ ROW Portfolio @@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
     <div class="parallax1"></div>
@@ -143,9 +240,10 @@
             </div>
         </div>
     </section>
+
     <!-- xxxxxxxxxxxxxxxxxxxxxxxxxxxx ROW Contact xxxxxxxxxxxxxxxxxxxxxxxxxxxx -->
     <script src="./assets/javascript/app.js"></script>
-    <script src="rellax.min.js"></script>
+
     <script>
         var rellax = new Rellax('.rellax');
     </script>
