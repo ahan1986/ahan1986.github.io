@@ -122,7 +122,7 @@ $(document).ready(function(){
       $(".otherProjectsRow .otherProjects:nth-child(3)").removeClass("otherProjects1 z-depth-5");
     }
     //Other Projects 2nd row -------------------------------------
-    if($("nav").offset().top > 1500) {
+    if($("nav").offset().top > 1750) {
       $(".otherProjectsRow2").children().show();
       $(".otherProjectsRow2 .otherProjects:nth-child(3)").addClass("otherProjects1 z-depth-5");
       setTimeout(() => {
