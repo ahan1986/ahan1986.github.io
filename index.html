@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed|Sigmar+One" rel="stylesheet">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <title>Andrew Han</title>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <!-- =================================== navbar =================================== -->
+  <div class="navbar-fixed">
+    <nav>
+      <!-- shrinking nav> -->
+      <div class="nav-wrapper">
+        <div class="brand-logo">Andrew A. Han</div>
+        <ul id="nav-mobile" class="right">
+          <!-- shrinking nav> -->
+          <li>
+            <a class="waves-effect waves-red" href="#">About Me</a>
+          </li>
+          <li>
+            <a class="waves-effect waves-teal" href="#">Portfolio</a>
+          </li>
+          <li>
+            <a class="waves-effect waves-yellow" href="#">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- =================================== top =================================== -->
+  <header>
+    <div class="z-depth-3" id="imgTop"></div>
+  </header>
+
+  <!-- =================================== AboutMe ================================= -->
+
+  <section class="one z-depth-5 container-fluid">
+    <img class="hoverable" id="one" src="img/profileImg.png">
+    <div id="me"></div>
+    <div id="justMe"></div>
+  </section>
+
+  <!-- creating a trail to the portfolio section -->
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="trail z-depth-4" id="trail1" style="margin-left: 90%;"></div>
+    </div>
+    <div class="row">
+      <div class="trail z-depth-4" id="trail2" style="margin-left: 98%;"></div>
+    </div>
+    <div class="row">
+      <div class="trail z-depth-4" id="trail3" style="margin-left: 93%;"></div>
+    </div>
+  </div>
+
+  <!-- =================================== PORTFOLIO ================================= -->
+  <!--  - - - - - - - - - Projects - - - - - -->
+  <div class="container">
+    <div class="row">
+      <div id="work">Here are some of my works</div>
+    </div>
+    <div class="row">
+      <div id="project">Featured Projects</div>
+    </div>
+    <div class="row">
+
+      <a href="https://cinemappr.herokuapp.com/">
+        <div class="popout hover waves-effect waves-light" id="cinemappr"></div>
+      </a>
+      <a href="https://github.com/ahan1986/Cinemappr">
+        <img class="github hover waves-effect waves-light" src="img/githubicon.svg">
+      </a>
+
+    </div>
+
+    <div class="row">
+      <a href="https://sleepy-harbor-31987.herokuapp.com/">
+        <div class="popout hover waves-effect waves-light" id="project2"></div>
+      </a>
+      <a href="https://github.com/ahan1986/RPG-project-1">
+        <img class="github1 hover waves-effect waves-light" src="img/githubicon.svg">
+      </a>
+    </div>
+  </div>
+  <!-- - - - - - - Other PROJECTS - - - - - -  -->
+  <!-- ******** Trail #2 ********* -->
+  <div class="container" style="transform: translateY(-100px);">
+    <div class="row">
+      <div class="trail z-depth-4" id="trail4" style="margin: 0 0 7% 10%;"></div>
+    </div>
+    <div class="row">
+      <div class="trail z-depth-4" id="trail5" style="margin-left: 6%;"></div>
+    </div>
+    <div class="row">
+      <div class="trail z-depth-4" id="trail6" style="margin:0 0 -400px 16%;"></div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+
+    <div class="row otherProjectsRow">
+
+      <div class="col s4 otherProjects">
+        <div id="dbsuper"></div>
+        <div class="text waves-effect waves-light"></div>
+      </div>
+
+      <div class="col s4 otherProjects">
+        <div id="api"></div>
+        <div class="text waves-effect waves-light"></div>
+      </div>
+
+      <div class="col s4 otherProjects">
+        <div id="crystalcollector"></div>
+        <div class="text waves-effect waves-light"></div>
+      </div>
+
+    </div>
+
+    <div class="row otherProjectsRow2">
+
+      <div class="col s4 otherProjects">
+        <div id="rockpaper"></div>
+        <div class="text waves-effect waves-light"></div>
+      </div>
+
+      <div class="col s4 otherProjects">
+        <div id="train">
+        </div>
+        <div class="text waves-effect waves-light"></div>
+      </div>
+
+      <div class="col s4 otherProjects">
+        <div id="trivia"></div>
+        <div class="text waves-effect waves-light"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div id="test"></div>
+
+
+
+
+
+  <script type="text/javascript" src="js/materialize.js"></script>
+</body>
+
+</html>
