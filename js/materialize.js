@@ -157,12 +157,12 @@ $(document).ready(function () {
     effectsActive = false;
     $("html, body").animate({ scrollTop: 3237 }, 1500);
   });
-  
+// scroll effect when you click on the navbar buttons, it will go to it's respective areas
   $("#scrollToAboutMe").on("click", () => {
-    $("html, body").animate({scrollTop: $("#one").position().top}, 1000);
+    $("html, body").animate({scrollTop: $("#justMe").position().top - 100}, 1000);
   });
 
   $("#scrollToPortfolio").on("click", ()=> {
-    $("html, body").animate({scrollTop: $("#work").position().top}, 1500);
+    $("html, body").animate({scrollTop: $("#work").position().top - 40}, 1500);
   });
 });
