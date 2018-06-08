@@ -84,7 +84,7 @@ $(document).ready(function () {
     }
 
     // ==========END of TRAIL ==============
-    // use javascript to shut the following projects animation down first and then start when they reach the contact me portion
+
     let effectsActive = true;
 
     if (effectsActive == true) {
@@ -152,13 +152,17 @@ $(document).ready(function () {
   $(window).scroll(navbarCollapse);
   // using the above function to get the scale-in working when scrolling
 
+// scroll effect when you click on ContactMe in the navbar
   $("#scrollToFooter").on("click", () => {
     effectsActive = false;
+    $("html, body").animate({ scrollTop: 3237 }, 1500);
+  });
+  
+  $("#scrollToAboutMe").on("click", () => {
+    $("html, body").animate({scrollTop: $("#one").position().top}, 1000);
+  });
 
-    $("html, body").animate({ scrollTop: 9999 });
-    
-    // setTimeout(effectsActve = true, 1000);
-  })
-
-
+  $("#scrollToPortfolio").on("click", ()=> {
+    $("html, body").animate({scrollTop: $("#work").position().top}, 1500);
+  });
 });
