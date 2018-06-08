@@ -1,11 +1,13 @@
 $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+    $('.sidenav').sidenav();
     $(".trail").hide();
     $("#work").hide();
     $(".trail").hide();
     $(".github").hide();
     $(".github1").hide();
-    $(".otherProjectsRow").children().hide();
-    $(".otherProjectsRow2").children().hide();
+    // $(".otherProjectsRow").children().hide();
+    // $(".otherProjectsRow2").children().hide();
   // Collapse Navbar
   var navbarCollapse = function() {
     if ($("nav").offset().top > 100) {
@@ -82,7 +84,7 @@ $(document).ready(function(){
     }
 
 // ==========END of TRAIL ==============
-
+// use javascript to shut the following projects animation down first and then start when they reach the contact me portion
     if($("nav").offset().top > 720) {
       $("#cinemappr").addClass("oneImage1 z-depth-5"); 
     } else {
@@ -145,5 +147,9 @@ $(document).ready(function(){
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
   // using the above function to get the scale-in working when scrolling
-  
-  });
+
+  // $("#scrollToFooter").on("click", () => {
+  //   $("html, body").animate({ scrollTop: $(document).height()-$(window).height() });
+  // })
+
+});

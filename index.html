@@ -24,7 +24,8 @@
 
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-offset="50">
+
   <!-- =================================== navbar =================================== -->
   <div class="navbar-fixed">
     <nav>
@@ -34,17 +35,19 @@
         <ul id="nav-mobile" class="right">
           <!-- shrinking nav> -->
           <li>
-            <a class="waves-effect waves-red" href="#">About Me</a>
+            <a class="waves-effect waves-red scrollspy" href="#one">About Me</a>
           </li>
           <li>
-            <a class="waves-effect waves-teal" href="#">Portfolio</a>
+            <a class="waves-effect waves-teal scrollspy" href="#work">Portfolio</a>
           </li>
           <li>
-            <a class="waves-effect waves-yellow" href="#">Contact Me</a>
+            <a class="waves-effect waves-yellow" id="scrollToFooter" href="#footer">Contact Me</a>
+
           </li>
         </ul>
       </div>
     </nav>
+
   </div>
   <!-- =================================== top =================================== -->
   <header>
@@ -124,18 +127,24 @@
     <div class="row otherProjectsRow">
 
       <div class="col s4 otherProjects">
-        <div id="dbsuper"></div>
-        <div class="text waves-effect waves-light"></div>
+        <a href="https://github.com/ahan1986/Hangman_Game">
+          <div id="dbsuper"></div>
+          <div class="text waves-effect waves-light"></div>
+        </a>
       </div>
 
       <div class="col s4 otherProjects">
-        <div id="api"></div>
-        <div class="text waves-effect waves-light"></div>
+        <a href="https://github.com/ahan1986/ajax-api">
+          <div id="api"></div>
+          <div class="text waves-effect waves-light"></div>
+        </a>
       </div>
 
       <div class="col s4 otherProjects">
-        <div id="crystalcollector"></div>
-        <div class="text waves-effect waves-light"></div>
+        <a href="https://github.com/ahan1986/week-4-game">
+          <div id="crystalcollector"></div>
+          <div class="text waves-effect waves-light"></div>
+        </a>
       </div>
 
     </div>
@@ -143,26 +152,30 @@
     <div class="row otherProjectsRow2">
 
       <div class="col s4 otherProjects">
-        <div id="rockpaper"></div>
-        <div class="text waves-effect waves-light"></div>
+        <a href="https://github.com/ahan1986/RockPaperScissors">
+          <div id="rockpaper"></div>
+          <div class="text waves-effect waves-light"></div>
+        </a>
       </div>
 
       <div class="col s4 otherProjects">
-        <div id="train">
-        </div>
-        <div class="text waves-effect waves-light"></div>
+        <a href="https://github.com/ahan1986/TrainScheduler">
+          <div id="train"></div>
+          <div class="text waves-effect waves-light"></div>
+        </a>
       </div>
 
       <div class="col s4 otherProjects">
-        <div id="trivia"></div>
-        <div class="text waves-effect waves-light"></div>
+        <a href="https://github.com/ahan1986/TriviaGame">
+          <div id="trivia"></div>
+          <div class="text waves-effect waves-light"></div>
+        </a> 
       </div>
 
     </div>
 
-  </div><br>
-
-
+  </div>
+  
   
   <!-- ============================== Footer ============================== -->
   <footer class="page-footer">
@@ -175,9 +188,15 @@
         <div class="col l4 offset-l2 s11">
           <h5 class="white-text">Reach Me</h5>
           <ul>
-            <li><i class="fas fa-envelope-square" style="font-size:2em"></i> Andrew.A.Han@gmail.com</li>
-            <li><i class="fab fa-github-square" style="font-size:2em"></i> github.com/ahan1986</a></li>
-            <li><i class="fab fa-linkedin" style="font-size: 2em"></i> www.linkedin.com/in/handrew86</a></li>
+            <li>
+              <i class="fas fa-envelope-square" style="font-size:2em"></i><a href="mailto:andrew.a.han@gmail.com">Andrew.A.Han@gmail.com</a>
+            </li>
+            <li>
+              <a href="https://github.com/ahan1986"><i class="fab fa-github-square" style="font-size:2em"></i> github.com/ahan1986</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/handrew86/"><i class="fab fa-linkedin" style="font-size: 2em"></i> www.linkedin.com/in/handrew86</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -188,12 +207,13 @@
       </div>
     </div>
   </footer>
+  <div id="footer"></div>
+
+
+
+
+
   
-
-
-
-
-
   <script type="text/javascript" src="js/materialize.js"></script>
 </body>
 

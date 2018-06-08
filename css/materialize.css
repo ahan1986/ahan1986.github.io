@@ -133,17 +133,6 @@ img {
     animation: popout 1s ease;
     -webkit-animation: popout 1s ease;
 }
-@keyframes slidein {
-    from {
-      margin-left: 50%;
-      width: 40px; 
-    }
-  
-    to {
-      margin-left: 45%;
-      width: 40px;
-    }
-  }
 
 /* ====== PORTFOLIO ======= */
 #work {
@@ -267,14 +256,14 @@ img {
 }
 .otherProjects {
     height: 300px;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.6s ease;
+    /* -webkit-transition: all 0.4s ease;
+    transition: all 0.6s ease; */
 }
 .otherProjects1 {
     animation: popout 1s ease;
     -webkit-animation: popout 1s ease;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.6s ease;
+    /* -webkit-transition: all 0.4s ease;
+    transition: all 0.6s ease; */
     border-radius: 10%;
 }
 
@@ -342,4 +331,10 @@ img {
     height: 90%;
     border-radius: 10%;
     box-shadow: 2px 2px 15px black;
+}
+a:link{
+    color: white;
+}
+a:visited {
+    color: white;
 }
