@@ -6,16 +6,18 @@ $(document).ready(function () {
   $(".trail").hide();
   $(".github").hide();
   $(".github1").hide();
+
+  // $("#work").hide();
+  // $("#project").hide();
   // $(".otherProjectsRow").children().hide();
   // $(".otherProjectsRow2").children().hide();
+
   // Collapse Navbar
   var navbarCollapse = function () {
     if ($("nav").offset().top > 100) {
       $("nav").addClass("navShrink");
-
     } else {
       $("nav").removeClass("navShrink");
-
     }
 
     if ($("nav").offset().top > 30) {
@@ -23,12 +25,10 @@ $(document).ready(function () {
       $("#nav-mobile").addClass("shrink");
       $(".one").addClass("oneShrink");
       $(".me").addClass("meFocus");
-      $("#me").html(`<div id="meme" class="me">Hello! My name is Andrew Han, and currently, I am a student at Penn Coding BootCamp located in Philadelphia, Pennsylvannia.
-          Previously, I ran a carwash in Downingtown, PA for eight years and sold it on March 2017. If I'm not coding, I am
-          usually on my guitar jamming to random songs. Through Penn Coding Bootcamp, I know I will become the best Fullstack
-          developer in the whole-wide world!</div>`);
-      $("#justMe").fadeIn().html(`<div class="aboutme">About Me</div>`);
-
+      $("#me").html(`<div id="meme" class="me">Hello! I'm Andrew! ${"<br>"}
+        I'm a Full Stack web developer with experience in team collaboration, problem solving skills under high stress, administration and management and attention to details. I love to take on any challenges and find ways to overcome it.</div>`);
+      $("#justMe").fadeIn().html(`<div class="aboutme z-depth-5">About Me</div>`);
+      // $("#skills").html(`<div> `)
 
     } else {
 
@@ -85,9 +85,13 @@ $(document).ready(function () {
 
     // ==========END of TRAIL ==============
 
-    let effectsActive = true;
-
-    if (effectsActive == true) {
+      if($("nav").offset().top > 480) {
+        $("#work").addClass("work").text("Here are some of my works");
+        $("#project").addClass("project").text("Featured Projects");
+      } else {
+        $("#work").removeClass("work").text("");
+        $("#project").removeClass("project").text("");
+      }
 
       if ($("nav").offset().top > 720) {
         $("#cinemappr").addClass("oneImage1 z-depth-5");
@@ -144,7 +148,6 @@ $(document).ready(function () {
         $(".otherProjectsRow2 .otherProjects:nth-child(2)").removeClass("otherProjects1 z-depth-3")
         $(".otherProjectsRow2 .otherProjects:nth-child(1)").removeClass("otherProjects1 z-depth-1");
       }
-    }
   };
   // Collapse now if page is not at top
   navbarCollapse();
