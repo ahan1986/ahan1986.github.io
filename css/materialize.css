@@ -254,32 +254,31 @@ img {
 }
 
 /* - - -  Other Projects - - -  */
-
+.small {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
 .text {
-    
+    background-color: #867182;
     color: white;
     width: 90%;
     height: 90%;
     font-size: 16px;
     padding-top: 50%;
     z-index: 10px;
+    transform: translate(20px, -270px);
     opacity: 0;
     border-radius: 10%;
 }
 .text:hover {
-    opacity: 1;
-    /* background-image: url("../img/githubtrans.png"); */
-    background-color: #867182;
+    opacity: 0.8;
+    background-image: url("../img/githubtrans.png");
     background-size: contain;
-    height: 50%;
-    width: 100%;
+    height: 90%;
+    width: 90%;
     background-repeat: no-repeat;
     background-position: center center;
-}
-#train:hover {
-    background-color: #867182;
-    z-index: 10px;
-    opacity: 0.5;
 }
 .otherProjects {
     height: 300px;
