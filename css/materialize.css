@@ -257,7 +257,6 @@ img {
 .small {
     height: 100%;
     width: 100%;
-    /* background-color: black; */
 }
 .text {
     background-color: #867182;
@@ -364,3 +363,28 @@ a:link{
 a:visited {
     color: white;
 }
+
+/* Project! 3rd ROW */
+
+#react19 {
+    background-image: url("../img/api.png");
+    background-size: cover;
+    margin: auto;
+    margin-top: 4%;
+    width: 90%;
+    height: 90%;
+    border-radius: 10%;
+    box-shadow: 2px 2px 15px black;
+}
+
+#MyFakeNewsSite {
+    background-image: url("../img/api.png");
+    background-size: cover;
+    margin: auto;
+    margin-top: 4%;
+    width: 90%;
+    height: 90%;
+    border-radius: 10%;
+    box-shadow: 2px 2px 15px black;
+};
+

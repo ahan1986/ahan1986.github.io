@@ -148,6 +148,27 @@ $(document).ready(function () {
         $(".otherProjectsRow2 .otherProjects:nth-child(2)").removeClass("otherProjects1 z-depth-3")
         $(".otherProjectsRow2 .otherProjects:nth-child(1)").removeClass("otherProjects1 z-depth-1");
       }
+
+      //Other Projects 3rd row -------------------------------------
+      if ($("nav").offset().top > 2050) {
+        $(".otherProjectsRow3").children().show();
+
+        $(".otherProjectsRow3 .otherProjects:nth-child(3)").addClass("otherProjects1 z-depth-5");
+        setTimeout(() => {
+          $(".otherProjectsRow3 .otherProjects:nth-child(2)").addClass("otherProjects1 z-depth-3");
+        }, 100);
+        setTimeout(() => {
+          $(".otherProjectsRow3 .otherProjects:nth-child(1)").addClass("otherProjects1 z-depth-1");
+        }, 200);
+
+      } else {
+        $(".otherProjectsRow3").children().slideUp();
+
+        $(".otherProjectsRow3 .otherProjects:nth-child(3)").removeClass("otherProjects1 z-depth-5");
+        $(".otherProjectsRow3 .otherProjects:nth-child(2)").removeClass("otherProjects1 z-depth-3")
+        $(".otherProjectsRow3 .otherProjects:nth-child(1)").removeClass("otherProjects1 z-depth-1");
+      }
+
   };
   // Collapse now if page is not at top
   navbarCollapse();
